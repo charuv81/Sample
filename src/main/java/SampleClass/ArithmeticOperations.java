@@ -22,6 +22,13 @@ public class ArithmeticOperations {
                 arithmeticOperations.add(a,b);
                 break;
             case 2:
+                arithmeticOperations.subtract(a,b);
+                break;
+            case 3:
+                arithmeticOperations.multiply(a,b);
+                break;
+            case 4:
+                arithmeticOperations.division(a,b);
                 break;
         }
 
@@ -37,11 +44,39 @@ public class ArithmeticOperations {
 
     // Subtraction
 
+    public int subtract(int A,int B) {
+        int temp = A - B;
+        System.out.println("Result of subtracting " + A + "and " + B + "is " + temp);
+        return temp;
+
+    }
+
+
+
     // Multiplication
+
+    public int  multiply (int A, int B)
+    {
+        int temp =  A  * B;
+        System.out.println("Result of multiplyng " + A +  "and " + B + " is " + temp);
+        return temp;
+
+    }
+
+
 
     //Division
 
-    //Modulus
+    public int division (int A, int B)
+    {
+        int temp =  A / B;
+        System.out.println("Result of dividing " + A +  "and " + B + " is " + temp);
+        return temp;
+
+    }
+
+            //Modulus
+
 
     // Percentage
 
